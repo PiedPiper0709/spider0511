@@ -31,10 +31,10 @@ def main(offset):
 	html=get_one_page(url)
 	print(html)
 	for result in parse_one_page(html):
-		print('正在爬取第',str(i-57832),'页',"《",result['title'],"》")
-		#print(result)
+		#print('正在爬取第',str(i-57832),'页',"《",result['title'],"》")
+		print(result)
 		write_to_file(result)
 
 if __name__=='__main__':
-	for i in range(57869,57969):
+	for i in range(57869,57979):
 		main(i)
